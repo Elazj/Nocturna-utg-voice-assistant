@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nocturna — UTG Student Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="scene">
+    <header class="masthead">
+      <span class="wordmark">Nocturna</span>
+      <span class="tagline">University of The Gambia — Student Assistant</span>
+    </header>
+
+    <main class="stage">
+      <button id="orb" class="orb" aria-label="Tap to speak">
+        <span class="orb-ring ring-2" aria-hidden="true"></span>
+        <span class="orb-ring ring-1" aria-hidden="true"></span>
+        <span class="orb-core" aria-hidden="true"></span>
+      </button>
+      <p id="status" class="status">Tap to ask a question</p>
+
+      <form id="text-form" class="text-form">
+        <input id="text-input" type="text" placeholder="Or type your question" autocomplete="off">
+        <button type="submit">Ask</button>
+      </form>
+    </main>
+
+    <section class="transcript" id="transcript" aria-live="polite">
+      <div class="line assistant">
+        <span class="speaker">Nocturna</span>
+        <p>Hello, I'm Nocturna, your UTG student assistant. Tap the circle and ask me something, or type below.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

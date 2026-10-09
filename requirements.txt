@@ -1,0 +1,14 @@
+SpeechRecognition
+gTTS
+playsound==1.2.2
+pyjokes
+requests
+scikit-learn
+Flask
+sentence-transformers
+matplotlib
+
+# PyAudio is required for sr.Microphone() but often fails a plain `pip
+# install` on Windows/macOS because it needs the PortAudio C library first.
+# See README.md "Setup" for the platform-specific install command.
+pyaudio

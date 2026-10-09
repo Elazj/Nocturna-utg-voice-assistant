@@ -1,0 +1,87 @@
+timestamp,query,intent,source,confidence,response_time_s
+2026-10-08 17:13:38,what time is it,time,utility,1.0,9.245
+2026-10-08 17:13:51,what is your name,identity,utility,1.0,6.216
+2026-10-08 17:14:10,tell me about the,unmatched,none,0.0,9.987
+2026-10-08 17:14:45,is the tuition fee for the,knowledge_base,"utg.edu.gm - School of ICT, Tuition Fee",0.907,27.414
+2026-10-08 17:23:03,what is you name?,unmatched,none,0.0,9.041
+2026-10-08 17:24:12,help,help,utility,1.0,55.117
+2026-10-08 17:34:04,can you tell me more on the information system courses?,unmatched,none,0.0,9.314
+2026-10-08 17:34:58,i need to know more about information system,knowledge_base,"utg.edu.gm - School of ICT, Diploma Programmes",0.592,13.625
+2026-10-08 17:35:26,what about telecoms,unmatched,none,0.0,9.059
+2026-10-08 17:40:38,help,help,utility,1.0,54.204
+2026-10-08 17:41:11,i need al the elective lists,knowledge_base,"utg.edu.gm - School of ICT, Diploma Programmes",0.592,13.586
+2026-10-08 17:44:47,what are the graduation requirements,knowledge_base,"utg.edu.gm - School of ICT, Diploma Programmes",0.521,15.607
+2026-10-08 17:49:09,what schools and faculties does utg have,knowledge_base,utg.edu.gm - Schools & Faculties,1.0,37.034
+2026-10-08 18:04:31,what is your name,identity,utility,1.0,6.234
+2026-10-08 18:05:40,how much is the tuition,knowledge_base,"utg.edu.gm - School of ICT, Tuition Fee",0.907,26.761
+2026-10-08 18:06:32,the graduate,unmatched,none,0.0,9.5
+2026-10-08 18:07:17,the graduate programs that the school of arts and sciences off,knowledge_base,utg.edu.gm - Undergraduate Admissions,0.734,30.665
+2026-10-08 18:08:03,undergraduate programs does school of business and public admin office,knowledge_base,utg.edu.gm - Undergraduate Admissions,0.673,23.703
+2026-10-08 18:09:26,programs does the school of education office,knowledge_base,utg.edu.gm - Undergraduate Admissions,0.839,28.769
+2026-10-08 18:10:25,what time does the school of medicine offers,knowledge_base,utg.edu.gm - Undergraduate Admissions,0.839,17.215
+2026-10-08 18:11:14,who do i contact about my transcript or registration,knowledge_base,utg.edu.gm - Office of the Registry,0.67,23.149
+2026-10-08 18:12:10,do i contact about utg email or,knowledge_base,utg.edu.gm - Students Guide / IT Department,0.669,29.573
+2026-10-08 18:15:50,is utg located,knowledge_base,utg.edu.gm - Get In Touch,1.0,24.67
+2026-10-08 18:16:42,utg located,knowledge_base,utg.edu.gm - Get In Touch,1.0,24.002
+2026-10-08 18:17:32,utg located,knowledge_base,utg.edu.gm - Get In Touch,1.0,29.88
+2026-10-08 18:27:16,who is the faculty officer for the school of ict,knowledge_base,utg.edu.gm - Faculty Officer,1.0,9.182
+2026-10-08 18:46:58,what are the basic require,unmatched,none,0.0,9.637
+2026-10-08 18:49:05,the busy of computer science major requirements,course_catalog,utility,1.0,112.832
+2026-10-08 18:54:28,what are the best in computer science minor requirement,course_catalog,utility,1.0,110.354
+2026-10-08 18:55:01,search,web_search,utility,1.0,16.768
+2026-10-08 18:55:31,search,web_search,utility,1.0,14.121
+2026-10-08 18:56:11,search,web_search,utility,1.0,15.437
+2026-10-08 18:57:29,location,unmatched,none,0.0,9.444
+2026-10-08 18:57:45,what time is it,time,utility,1.0,9.656
+2026-10-08 18:58:11,what's the weather,weather,utility,1.0,19.409
+2026-10-08 19:04:13,set reminder,unmatched,none,0.0,9.7
+2026-10-08 19:04:32,remind me,set_reminder,utility,1.0,12.858
+2026-10-08 19:09:35,what's the weather in banjul,weather,utility,1.0,20.775
+2026-10-08 19:09:59,what's the weather,weather,utility,1.0,18.493
+2026-10-08 19:10:55,search the weather,weather,utility,1.0,47.577
+2026-10-08 19:11:24,the weather,weather,utility,1.0,23.669
+2026-10-08 19:11:49,search the weather,weather,utility,1.0,17.573
+2026-10-08 19:12:21,search,web_search,utility,1.0,16.484
+2026-10-08 19:12:46,what's the weather,weather,utility,1.0,17.386
+2026-10-09 16:08:07,what are the causes for year 3 semester 1,unmatched,none,0.0,11.381
+2026-10-09 16:16:35,what are the computer science elect,knowledge_base,"utg.edu.gm - School of ICT, Admission Requirements",0.657,34.008
+2026-10-09 16:17:14,remind me to submit my assignment in 2 days,set_reminder,utility,1.0,8.367
+2026-10-09 16:24:48,the computer science electives,course_catalog,utility,1.0,55.622
+2026-10-09 16:25:57,causes for year one semester 3,unmatched,none,0.0,9.757
+2026-10-09 16:26:21,search,web_search,utility,1.0,18.203
+2026-10-09 16:27:27,search,web_search,utility,1.0,17.105
+2026-10-09 16:28:11,what's the weather,weather,utility,1.0,27.673
+2026-10-09 16:30:58,search,web_search,utility,1.0,13.33
+2026-10-09 16:31:33,search,web_search,utility,1.0,17.574
+2026-10-09 16:43:33,find location,location,utility,1.0,16.348
+2026-10-09 16:44:08,find location,location,utility,1.0,23.822
+2026-10-09 16:47:50,search,web_search,utility,1.0,11.876
+2026-10-09 16:48:21,find location,location,utility,1.0,22.119
+2026-10-09 16:48:59,find location,location,utility,1.0,16.185
+2026-10-09 16:49:25,find location,location,utility,1.0,16.044
+2026-10-09 16:51:09,find,unmatched,none,0.0,9.018
+2026-10-09 16:52:32,help,help,utility,1.0,58.547
+2026-10-09 16:54:51,is your name,unmatched,none,0.0,12.354
+2026-10-09 16:55:07,what is you name,unmatched,none,0.0,11.212
+2026-10-09 16:55:25,what is you name?,unmatched,none,0.0,18.094
+2026-10-09 16:55:37,what is your name,identity,utility,1.0,10.253
+2026-10-09 16:56:31,what time ist,unmatched,none,0.0,9.974
+2026-10-09 16:56:42,what time is it,time,utility,1.0,10.436
+2026-10-09 16:57:15,find location,location,utility,1.0,17.176
+2026-10-09 16:57:25,banjul,unmatched,none,0.0,10.008
+2026-10-09 16:57:50,find location,location,utility,1.0,16.152
+2026-10-09 16:58:01,bakau,unmatched,none,0.0,11.103
+2026-10-09 16:58:15,fine location,unmatched,none,0.0,8.863
+2026-10-09 16:58:45,find location,location,utility,1.0,21.599
+2026-10-09 16:58:56,boston,unmatched,none,0.0,10.834
+2026-10-09 16:59:15,search,web_search,utility,1.0,19.779
+2026-10-09 16:59:30,search,web_search,utility,1.0,14.278
+2026-10-09 16:59:39,dogs,unmatched,none,0.0,8.858
+2026-10-09 16:59:48,books,unmatched,none,0.0,9.584
+2026-10-09 17:00:08,search,web_search,utility,1.0,19.715
+2026-10-09 17:00:24,search,web_search,utility,1.0,15.572
+2026-10-09 17:00:28,books,unmatched,none,0.0,4.914
+2026-10-09 17:00:32,search,web_search,utility,1.0,3.257
+2026-10-09 17:00:51,search,web_search,utility,1.0,14.554
+2026-10-09 17:10:41,search,web_search,utility,1.0,17.6
+2026-10-09 17:10:57,search,web_search,utility,1.0,15.525

@@ -1,0 +1,268 @@
+:root {
+  --bg-deep: #141629;
+  --bg-deeper: #0a0b16;
+  --surface: #1c2036;
+  --hairline: rgba(255, 255, 255, 0.08);
+  --text-primary: #eef0f7;
+  --text-muted: #8d92ae;
+  --accent: #e3a857;
+  --accent-dim: rgba(227, 168, 87, 0.35);
+  --accent-soft: rgba(227, 168, 87, 0.14);
+  --assistant-tag: #7fd8c6;
+  --you-tag: #e3a857;
+  --focus-ring: #c9d6ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-primary);
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, var(--bg-deep) 0%, var(--bg-deeper) 70%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.scene {
+  width: 100%;
+  max-width: 640px;
+  padding: 2.5rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- Header ---------- */
+
+.masthead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.wordmark {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Stage (hero) ---------- */
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.5rem 0 2rem;
+}
+
+.orb {
+  position: relative;
+  width: 148px;
+  height: 148px;
+  border: none;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f3c889 0%, var(--accent) 45%, #8a5f2a 100%);
+  box-shadow: 0 0 40px var(--accent-soft), 0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  cursor: pointer;
+  animation: breathe 4.5s ease-in-out infinite;
+  padding: 0;
+}
+
+.orb:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 6px;
+}
+
+.orb-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent-dim);
+  opacity: 0;
+}
+
+.orb.listening {
+  animation: none;
+  box-shadow: 0 0 60px var(--accent-dim), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.orb.listening .orb-ring {
+  animation: ripple 1.6s ease-out infinite;
+}
+
+.orb.listening .ring-2 {
+  animation-delay: 0.5s;
+}
+
+.orb:disabled {
+  cursor: default;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.045); }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+.status {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  min-height: 1.3em;
+}
+
+/* ---------- Text fallback input ---------- */
+
+.text-form {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 360px;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 0.4rem;
+}
+
+.text-form input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.1rem;
+}
+
+.text-form input::placeholder {
+  color: var(--text-muted);
+}
+
+.text-form input:focus {
+  outline: none;
+}
+
+.text-form input:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.text-form button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.3rem 0.2rem;
+}
+
+.text-form button:hover {
+  color: #f3c889;
+}
+
+.text-form button:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- Transcript ---------- */
+
+.transcript {
+  flex: 1;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.line {
+  max-width: 100%;
+}
+
+.line .speaker {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.line.assistant .speaker {
+  color: var(--assistant-tag);
+}
+
+.line.you .speaker {
+  color: var(--you-tag);
+}
+
+.line p {
+  margin: 0;
+  line-height: 1.55;
+  color: var(--text-primary);
+  max-width: 62ch;
+}
+
+.transcript::-webkit-scrollbar {
+  width: 6px;
+}
+
+.transcript::-webkit-scrollbar-thumb {
+  background: var(--hairline);
+  border-radius: 3px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 420px) {
+  .orb {
+    width: 120px;
+    height: 120px;
+  }
+  .wordmark {
+    font-size: 1.4rem;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .orb,
+  .orb-ring {
+    animation: none !important;
+  }
+}
